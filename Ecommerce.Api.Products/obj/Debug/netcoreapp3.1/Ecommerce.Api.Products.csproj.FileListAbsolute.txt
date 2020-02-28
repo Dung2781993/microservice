@@ -2,7 +2,6 @@ D:\Working\src\Lynda-Microservices\ECommerce\Ecommerce.Api.Products\bin\Debug\ne
 D:\Working\src\Lynda-Microservices\ECommerce\Ecommerce.Api.Products\bin\Debug\netcoreapp3.1\appsettings.json
 D:\Working\src\Lynda-Microservices\ECommerce\Ecommerce.Api.Products\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 D:\Working\src\Lynda-Microservices\ECommerce\Ecommerce.Api.Products\bin\Debug\netcoreapp3.1\Ecommerce.Api.Products.exe
-D:\Working\src\Lynda-Microservices\ECommerce\Ecommerce.Api.Products\obj\Debug\netcoreapp3.1\Ecommerce.Api.Products.csprojAssemblyReference.cache
 D:\Working\src\Lynda-Microservices\ECommerce\Ecommerce.Api.Products\obj\Debug\netcoreapp3.1\staticwebassets\Ecommerce.Api.Products.StaticWebAssets.Manifest.cache
 D:\Working\src\Lynda-Microservices\ECommerce\Ecommerce.Api.Products\obj\Debug\netcoreapp3.1\staticwebassets\Ecommerce.Api.Products.StaticWebAssets.xml
 D:\Working\src\Lynda-Microservices\ECommerce\Ecommerce.Api.Products\obj\Debug\netcoreapp3.1\Ecommerce.Api.Products.AssemblyInfoInputs.cache
