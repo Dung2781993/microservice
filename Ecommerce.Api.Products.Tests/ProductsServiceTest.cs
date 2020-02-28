@@ -34,6 +34,51 @@ namespace Ecommerce.Api.Products.Tests
 
         }
 
+        [Fact]
+        public async Task GetProductsReturnsAllProductsUsingValidId()
+        {
+            var options = new DbContextOptionsBuilder<ProductDbContext>()
+                .UseInMemoryDatabase(nameof(GetProductsReturnsAllProductsUsingValidId))
+                .Options;
+            var dbContext = new ProductDbContext(options);
+            CreateProducts(dbContext);
+
+            var productProfile = new ProductProfile();
+            var configuration = new MapperConfiguration(cfg => cfg.AddProfile(productProfile));
+            var mapper = new Mapper(configuration);
+
+            var productsProvider = new ProductsProvider(dbContext, null, mapper);
+
+            var product = await productsProvider.GetProductsAsync(1);
+            Assert.True(product.IsSuccess);
+            Assert.NotNull(product.Products);
+            Assert.True(product.Products.Id == 1);
+            Assert.Null(product.ErrorMessage);
+
+        }
+
+        [Fact]
+        public async Task GetProductsReturnsAllProductsUsingInValidId()
+        {
+            var options = new DbContextOptionsBuilder<ProductDbContext>()
+                .UseInMemoryDatabase(nameof(GetProductsReturnsAllProductsUsingInValidId))
+                .Options;
+            var dbContext = new ProductDbContext(options);
+            CreateProducts(dbContext);
+
+            var productProfile = new ProductProfile();
+            var configuration = new MapperConfiguration(cfg => cfg.AddProfile(productProfile));
+            var mapper = new Mapper(configuration);
+
+            var productsProvider = new ProductsProvider(dbContext, null, mapper);
+
+            var product = await productsProvider.GetProductsAsync(- 1);
+            Assert.False(product.IsSuccess);
+            Assert.Null(product.Products);
+            Assert.NotNull(product.ErrorMessage);
+
+        }
+
         private void CreateProducts(ProductDbContext dbContext)
         {
             for(var i= 1; i <= 10; i++)

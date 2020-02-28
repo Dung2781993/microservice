@@ -34,3 +34,4 @@ D:\Working\src\Lynda-Microservices\ECommerce\Ecommerce.Api.Products\bin\Debug\ne
 D:\Working\src\Lynda-Microservices\ECommerce\Ecommerce.Api.Products\obj\Debug\netcoreapp3.1\Ecommerce.Api.Products.MvcApplicationPartsAssemblyInfo.cache
 D:\Working\src\Lynda-Microservices\ECommerce\Ecommerce.Api.Products\obj\Debug\netcoreapp3.1\Ecommerce.Api.Products.dll
 D:\Working\src\Lynda-Microservices\ECommerce\Ecommerce.Api.Products\obj\Debug\netcoreapp3.1\Ecommerce.Api.Products.pdb
+D:\Working\src\Lynda-Microservices\ECommerce\Ecommerce.Api.Products\obj\Debug\netcoreapp3.1\Ecommerce.Api.Products.csprojAssemblyReference.cache
