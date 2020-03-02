@@ -105,6 +105,6 @@ D:\Working\src\Lynda-Microservices\ECommerce\Ecommerce.Api.Orders\bin\Debug\netc
 D:\Working\src\Lynda-Microservices\ECommerce\Ecommerce.Api.Orders\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\Working\src\Lynda-Microservices\ECommerce\Ecommerce.Api.Orders\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\Working\src\Lynda-Microservices\ECommerce\Ecommerce.Api.Orders\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Working\src\Lynda-Microservices\ECommerce\Ecommerce.Api.Orders\obj\Debug\netcoreapp3.1\Ecommerce.Api.Orders.MvcApplicationPartsAssemblyInfo.cache
 D:\Working\src\Lynda-Microservices\ECommerce\Ecommerce.Api.Orders\obj\Debug\netcoreapp3.1\Ecommerce.Api.Orders.dll
 D:\Working\src\Lynda-Microservices\ECommerce\Ecommerce.Api.Orders\obj\Debug\netcoreapp3.1\Ecommerce.Api.Orders.pdb
+D:\Working\src\Lynda-Microservices\ECommerce\Ecommerce.Api.Orders\obj\Debug\netcoreapp3.1\Ecommerce.Api.Orders.MvcApplicationPartsAssemblyInfo.cache

@@ -31,7 +31,7 @@ D:\Working\src\Lynda-Microservices\ECommerce\Ecommerce.Api.Products\bin\Debug\ne
 D:\Working\src\Lynda-Microservices\ECommerce\Ecommerce.Api.Products\bin\Debug\netcoreapp3.1\Ecommerce.Api.Products.pdb
 D:\Working\src\Lynda-Microservices\ECommerce\Ecommerce.Api.Products\bin\Debug\netcoreapp3.1\AutoMapper.dll
 D:\Working\src\Lynda-Microservices\ECommerce\Ecommerce.Api.Products\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-D:\Working\src\Lynda-Microservices\ECommerce\Ecommerce.Api.Products\obj\Debug\netcoreapp3.1\Ecommerce.Api.Products.MvcApplicationPartsAssemblyInfo.cache
 D:\Working\src\Lynda-Microservices\ECommerce\Ecommerce.Api.Products\obj\Debug\netcoreapp3.1\Ecommerce.Api.Products.dll
 D:\Working\src\Lynda-Microservices\ECommerce\Ecommerce.Api.Products\obj\Debug\netcoreapp3.1\Ecommerce.Api.Products.pdb
 D:\Working\src\Lynda-Microservices\ECommerce\Ecommerce.Api.Products\obj\Debug\netcoreapp3.1\Ecommerce.Api.Products.csprojAssemblyReference.cache
+D:\Working\src\Lynda-Microservices\ECommerce\Ecommerce.Api.Products\obj\Debug\netcoreapp3.1\Ecommerce.Api.Products.MvcApplicationPartsAssemblyInfo.cache

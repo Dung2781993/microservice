@@ -1,0 +1,113 @@
+version: '3.4'
+
+services:
+  ecommerce.api.customers:
+    image: ecommerceapicustomers:dev
+    container_name: Ecommerce.Api.Customers
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "Ecommerce.Api.Customers"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - NUGET_PACKAGES=C:\.nuget\packages
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_ecommerce.api.customers$
+    volumes:
+      - D:\Working\src\Lynda-Microservices\ECommerce\Ecommerce.Api.Customers:C:\app
+      - D:\Working\src\Lynda-Microservices\ECommerce:C:\src
+      - C:\Users\Jason Le\onecoremsvsmon:C:\remote_debugger:ro
+#$nuget_volume_mapping_ecommerce.api.customers$
+      - ${APPDATA}/ASP.NET/Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+
+    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "\"C:\\Program Files\\dotnet\\dotnet.exe\""
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_ecommerce.api.customers$ \"bin\\Debug\\netcoreapp3.1\\Ecommerce.Api.Customers.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "C:\\app"
+      com.microsoft.visualstudio.debuggee.killprogram: "C:\\remote_debugger\\x64\\utils\\KillProcess.exe dotnet.exe"
+
+  ecommerce.api.orders:
+    image: ecommerceapiorders:dev
+    container_name: Ecommerce.Api.Orders
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "Ecommerce.Api.Orders"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - NUGET_PACKAGES=C:\.nuget\packages
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_ecommerce.api.orders$
+    volumes:
+      - D:\Working\src\Lynda-Microservices\ECommerce\Ecommerce.Api.Orders:C:\app
+      - D:\Working\src\Lynda-Microservices\ECommerce:C:\src
+      - C:\Users\Jason Le\onecoremsvsmon:C:\remote_debugger:ro
+#$nuget_volume_mapping_ecommerce.api.orders$
+      - ${APPDATA}/ASP.NET/Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+
+    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "\"C:\\Program Files\\dotnet\\dotnet.exe\""
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_ecommerce.api.orders$ \"bin\\Debug\\netcoreapp3.1\\Ecommerce.Api.Orders.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "C:\\app"
+      com.microsoft.visualstudio.debuggee.killprogram: "C:\\remote_debugger\\x64\\utils\\KillProcess.exe dotnet.exe"
+
+
+  ecommerce.api.products:
+    image: ecommerceapiproducts:dev
+    container_name: Ecommerce.Api.Products
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "Ecommerce.Api.Products"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - NUGET_PACKAGES=C:\.nuget\packages
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_ecommerce.api.products$
+    volumes:
+      - D:\Working\src\Lynda-Microservices\ECommerce\Ecommerce.Api.Products:C:\app
+      - D:\Working\src\Lynda-Microservices\ECommerce:C:\src
+      - C:\Users\Jason Le\onecoremsvsmon:C:\remote_debugger:ro
+#$nuget_volume_mapping_ecommerce.api.products$
+      - ${APPDATA}/ASP.NET/Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+
+    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "\"C:\\Program Files\\dotnet\\dotnet.exe\""
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_ecommerce.api.products$ \"bin\\Debug\\netcoreapp3.1\\Ecommerce.Api.Products.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "C:\\app"
+      com.microsoft.visualstudio.debuggee.killprogram: "C:\\remote_debugger\\x64\\utils\\KillProcess.exe dotnet.exe"
+
+
+  ecommerce.api.search:
+    image: ecommerceapisearch:dev
+    container_name: Ecommerce.Api.Search
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "Ecommerce.Api.Search"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - NUGET_PACKAGES=C:\.nuget\packages
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_ecommerce.api.search$
+    volumes:
+      - D:\Working\src\Lynda-Microservices\ECommerce\Ecommerce.Api.Search:C:\app
+      - D:\Working\src\Lynda-Microservices\ECommerce:C:\src
+      - C:\Users\Jason Le\onecoremsvsmon:C:\remote_debugger:ro
+#$nuget_volume_mapping_ecommerce.api.search$
+      - ${APPDATA}/ASP.NET/Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+
+    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "\"C:\\Program Files\\dotnet\\dotnet.exe\""
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_ecommerce.api.search$ \"bin\\Debug\\netcoreapp3.1\\Ecommerce.Api.Search.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "C:\\app"
+      com.microsoft.visualstudio.debuggee.killprogram: "C:\\remote_debugger\\x64\\utils\\KillProcess.exe dotnet.exe"
+
